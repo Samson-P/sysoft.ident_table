@@ -1,4 +1,4 @@
-program Lab1;
+program LR1_T.Kislitsyna_W10;
 
 uses
   Forms,

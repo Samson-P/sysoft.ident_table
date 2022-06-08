@@ -161,7 +161,6 @@ object Lab1Form: TLab1Form
     Anchors = [akLeft, akTop, akRight, akBottom]
     Caption = #1048#1089#1093#1086#1076#1085#1099#1077' '#1076#1072#1085#1085#1099#1077
     TabOrder = 2
-    ExplicitWidth = 255
     object ListIdents: TMemo
       Left = 2
       Top = 15
@@ -175,9 +174,6 @@ object Lab1Form: TLab1Form
       ShowHint = True
       TabOrder = 0
       WordWrap = False
-      ExplicitTop = 3
-      ExplicitWidth = 231
-      ExplicitHeight = 396
     end
   end
   object GroupFile: TGroupBox
@@ -203,19 +199,6 @@ object Lab1Form: TLab1Form
       TabOrder = 0
       Text = 'data.dat'
       OnChange = EditFileChange
-      ExplicitWidth = 351
-    end
-    object BtnFile: TButton
-      Left = 8
-      Top = 48
-      Width = 105
-      Height = 25
-      Hint = #1042#1099#1073#1086#1088' '#1079#1072#1075#1088#1091#1078#1072#1077#1084#1086#1075#1086' '#1092#1072#1081#1083#1072
-      Caption = '&'#1042#1099#1073#1088#1072#1090#1100' '#1092#1072#1081#1083
-      ParentShowHint = False
-      ShowHint = True
-      TabOrder = 1
-      OnClick = BtnFileClick
     end
     object BtnLoad: TButton
       Left = 8
@@ -226,8 +209,20 @@ object Lab1Form: TLab1Form
       Caption = '&'#1047#1072#1075#1088#1091#1079#1080#1090#1100' '#1092#1072#1081#1083
       ParentShowHint = False
       ShowHint = True
-      TabOrder = 2
+      TabOrder = 1
       OnClick = BtnLoadClick
+    end
+    object BtnFile: TButton
+      Left = 96
+      Top = 152
+      Width = 105
+      Height = 25
+      Hint = #1042#1099#1073#1086#1088' '#1079#1072#1075#1088#1091#1078#1072#1077#1084#1086#1075#1086' '#1092#1072#1081#1083#1072
+      Caption = '&'#1042#1099#1073#1088#1072#1090#1100' '#1092#1072#1081#1083
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 2
+      OnClick = BtnFileClick
     end
   end
   object GroupSearch: TGroupBox
@@ -262,7 +257,6 @@ object Lab1Form: TLab1Form
       ShowHint = True
       TabOrder = 0
       OnChange = EditSearchChange
-      ExplicitWidth = 274
     end
     object BtnSearch: TButton
       Left = 356
@@ -277,7 +271,6 @@ object Lab1Form: TLab1Form
       ShowHint = True
       TabOrder = 1
       OnClick = BtnSearchClick
-      ExplicitLeft = 289
     end
     object GroupHash: TGroupBox
       Left = 8
@@ -369,7 +362,6 @@ object Lab1Form: TLab1Form
       ShowHint = True
       TabOrder = 3
       OnClick = BtnResetClick
-      ExplicitLeft = 289
     end
     object BtnAllSearch: TButton
       Left = 8
@@ -392,7 +384,6 @@ object Lab1Form: TLab1Form
     Align = alBottom
     BevelOuter = bvNone
     TabOrder = 3
-    ExplicitWidth = 704
     DesignSize = (
       654
       37)
@@ -409,7 +400,6 @@ object Lab1Form: TLab1Form
       ShowHint = True
       TabOrder = 0
       OnClick = BtnExitClick
-      ExplicitLeft = 464
     end
   end
   object FileOpenDlg: TOpenDialog

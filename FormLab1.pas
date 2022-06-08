@@ -12,7 +12,6 @@ type
     GroupFile: TGroupBox;
     GroupSearch: TGroupBox;
     EditFile: TEdit;
-    BtnFile: TButton;
     BtnLoad: TButton;
     EditSearch: TEdit;
     BtnSearch: TButton;
@@ -33,6 +32,7 @@ type
     LblHashAllCount: TLabel;
     LblTreeAllCount: TLabel;
     Panel1: TPanel;
+    BtnFile: TButton;
     procedure FormCreate(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure BtnFileClick(Sender: TObject);
