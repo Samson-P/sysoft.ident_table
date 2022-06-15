@@ -1,4 +1,4 @@
-unit FormLab1;
+unit UI;
 
 interface
 
@@ -48,7 +48,7 @@ type
     iCountNum,iCountHash,iCountTree: integer;
     { Процедура поиска заданной строки }
     procedure SearchStr(const sSearch: string);
-    { Процедура вывода на экран статистической информации о поиске }
+    { Процедура вывода на экран статистической информации о поиске переписана }
     procedure ViewStatistic(iTree,iHash: integer);
    public
     { Public declarations }
@@ -59,9 +59,9 @@ var
 
 implementation
 
-{$R *.DFM}
+//{$R *.DFM}
 
-uses FncTree, FncHash;
+uses func_tree, func_hash;
 
 procedure TLab1Form.FormCreate(Sender: TObject);
 begin
@@ -99,20 +99,20 @@ end;
 procedure TLab1Form.ViewStatistic(iTree,iHash: integer);
 { Вывод на экран статистической информации о поиске }
 begin
-  LblSearchCount.Caption := Format('Всего поиск: %d раз',[iCountNum]);
-  LblHashCount.Caption := Format('Сравнений: %d',[iHash]);
-  LblTreeCount.Caption := Format('Сравнений: %d',[iTree]);
-  LblHashAllCount.Caption := Format('Всего сравнений: %d',[iCountHash]);
-  LblTreeAllCount.Caption := Format('Всего сравнений: %d',[iCountTree]);
+  wite(Format('Всего поиск: %d раз',[iCountNum]));
+  wite(Format('Сравнений рехэширование: %d',[iHash]));
+  wite(Format('Сравнений ветвление: %d',[iTree]));
+  wite(Format('Всего сравнений рехэширование: %d',[iCountHash]));
+  wite(Format('Всего сравнений ветвление: %d',[iCountTree]));
   if iCountNum > 0 then
   begin
-    LblHashAvrg.Caption := Format('В среднем сравнений: %.2f',[iCountHash/iCountNum]);
-    LblTreeAvrg.Caption := Format('В среднем сравнений: %.2f',[iCountTree/iCountNum]);
+    wite(Format('В среднем сравнений рехэширование: %.2f',[iCountHash/iCountNum]));
+    wite(Format('В среднем сравнений ветвление: %.2f',[iCountTree/iCountNum]));
   end
   else
   begin
-    LblHashAvrg.Caption := Format('В среднем сравнений: %.2f',[0.0]);
-    LblTreeAvrg.Caption := Format('В среднем сравнений: %.2f',[0.0]);
+    wite(Format('В среднем сравнений рехэширование: %.2f',[0.0]));
+    wite(Format('В среднем сравнений ветвление: %.2f',[0.0]));
   end;
 end;
 

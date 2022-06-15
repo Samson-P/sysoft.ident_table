@@ -1,11 +1,11 @@
-unit FncTree;
+unit func_tree;
 
 interface
 { Модуль, обеспечивающий работу с комбинированной таблицей
   идентификаторов, построенной на основе хэш-функции и
   бинарного дерева }
 
-uses TblElem;
+uses table_element;
 
 { Функция начальной инициализации хэш-таблицы }
 procedure InitTreeVar;

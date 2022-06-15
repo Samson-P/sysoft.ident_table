@@ -1,4 +1,4 @@
-unit TblElem;
+unit table_element;
 
 interface
 { Модуль, описывающий структуру данных элементов

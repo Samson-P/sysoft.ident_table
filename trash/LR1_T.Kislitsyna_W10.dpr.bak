@@ -1,7 +1,8 @@
 program LR1_T.Kislitsyna_W10;
 
 uses
-  UI in 'UI.pas',
+  //Forms,
+  UI in 'UI.pas' {Lab1Form},
   func_hash in '.\gen\func_hash.pas',
   table_element in '.\gen\table_element.pas',
   func_tree in '.\gen\func_tree.pas';
