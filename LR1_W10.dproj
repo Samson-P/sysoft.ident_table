@@ -1,7 +1,7 @@
 ﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <ProjectGuid>{792CBD0A-88D6-4553-838A-3A369D476DAC}</ProjectGuid>
-        <MainSource>LR1_T.Kislitsyna_W10.dpr</MainSource>
+        <MainSource>LR1_W10.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
         <TargetedPlatforms>1025</TargetedPlatforms>
@@ -72,7 +72,7 @@
         <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;$(DCC_Namespace)</DCC_Namespace>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1049</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=Alexey Moltchanov;FileDescription=Test software for labaratory work 1;FileVersion=1.0.0.0;InternalName=Lab. work - 1;LegalCopyright=2004;LegalTrademarks=Test software for labaratory work 1;OriginalFilename=LR1_T.Kislitsyna_W10;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=Alexey Moltchanov;FileDescription=Test software for labaratory work 1;FileVersion=1.0.0.0;InternalName=Lab. work - 1;LegalCopyright=2004;LegalTrademarks=Test software for labaratory work 1;OriginalFilename=LR1_W10;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_iOSDevice64)'!=''">
         <iOS_AppStore1024>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_1024x1024.png</iOS_AppStore1024>
@@ -144,7 +144,7 @@
         <BorlandProject>
             <Delphi.Personality>
                 <Source>
-                    <Source Name="MainSource">LR1_T.Kislitsyna_W10.dpr</Source>
+                    <Source Name="MainSource">LR1_W10.dpr</Source>
                 </Source>
             </Delphi.Personality>
             <Platforms>
